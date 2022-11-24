@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Budget {
+  id           String       @id @default(uuid())
+  createdAt    DateTime     @default(now())
+  name         String
+  cpf          String
+  phone        String
+  email        String
+  genre        String
+  date_nasc    String
+  professional String
+  date_start   String
+  date_end     String
+  day_week     String
+  observation  String
+  city         String
+  state        String
+  cep          String
+
+  @@map("budgets")
+}
+
