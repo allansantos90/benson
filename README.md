@@ -42,7 +42,7 @@ Node na versão 18.12.0
 
 Clonar o repositório:
 ```sh
-git clone <link-do-repositorio>
+git clone https://github.com/allansantos90/benson.git
 ```
 
 Instalar dependencias
